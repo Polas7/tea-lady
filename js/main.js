@@ -1,4 +1,7 @@
-
+$(document).ready(function() {
+    $('select').material_select();
+ });
+       
  
 function datosCliente(nombre,apellido,email,direccion, telefono){
 	this.nombre=nombre;
