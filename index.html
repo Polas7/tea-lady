@@ -4,18 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Té como señora</title>
 	<link rel="stylesheet" href="css/main.css">
+	<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 </head>
 <body>
+
 	<header>
 		<h1>Tetería Té como Señora</h1>
 	</header>
 	<section id="formulario">
+	<div class="card-panel  yellow darken-4">
+    <span class="orange accent-1">
 		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
-		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
-		<form action="">
-			<label for="Nombre Dueño"> Nombre:</label>
+		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p></div></span>
+   			<form action="">
+			<label for="Nombre"> Nombre:</label>
 			<input type="text">
-			<label for="Nombre mascota"> Apellido:</label>
+			<label for="apellido"> Apellido:</label>
 			<input type="text">
 			<label for="Email"> Correo Electrónico:</label> 
 			<input type="email">
@@ -41,6 +46,13 @@
 	<section id="productos">
 		<!-- Acá puedes crear lo que quieras-->
 	</section>
-	<script src="js/main.js"></script>
+	<script src="js/main.js">
+		 $(document).ready(function() {
+    $('select').material_select();
+  });
+	</script>
+
+	<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 </body>
 </html>
