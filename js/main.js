@@ -1,27 +1,14 @@
-$(document).ready(function() {
-    $('select').material_select();
- });
-       
- 
-function datosCliente(nombre,apellido,email,direccion, telefono){
-	this.nombre=nombre;
-	this.apellido=apellido;
-	this.email=email;
-	this.direccion=direccion;
-	this.telefono=telefono;
-}
 function mostrarData(){
-var nombre= document.getElementById("Nombre").value
-var apellido= document.getElementById("Apellido").value
-var email= document.getElementById("Email").value
-var direccion= document.getElementById("Direccion").value
-var telefono= document.getElementById("Telefono").value	
-var cliente= new datosCliente(nombre, apellido, email, direccion, telefono);
-var compras= [];
-compras.push(cliente);
+	var nombre = document.getElementById("nombre").value;
+	var apellido = document.getElementById("apellido").value;
+	var mail = document.getElementById("email").value;
+	var direccion = document.getElementById("direccion").value;
+	var fono = document.getElementById("telefono").value;
+	var tecito = document.getElementById("teescogido").value;
+	var imprimirDatos = document.getElementById("clientes");
 
-compras.forEach(function (elements){
-var mostrar = document.getElementById("clientes")
-mostrar.innerHTML+= elements.nombre + elements.apellido + elements.email + elements.direccion + elements.telefono
-});
+
+	imprimirDatos.innerHTML = "<br><strong>Nombre: </strong>" + nombre + "<br><strong>Apellido: </strong>" + apellido + 
+	"<br><strong>Dirección: </strong>" + direccion + "<br><strong>Correo: </strong>" + mail + "<br><strong>Teléfono: </strong>"
+	 + fono + "<br><strong>Té seleccionado: </strong>" + tecito;
 }

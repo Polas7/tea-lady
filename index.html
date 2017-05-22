@@ -1,51 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<title>Té como señora</title>
 	<link rel="stylesheet" href="css/style.css">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="vendors/materialize/css/materialize.min.css" media="screen,projection" />
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Droid+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
 </head>
 <body>
-<h1>Té como señora</h1>
-<section id="formulario">
-	<div class="card-panel  yellow darken-4">
-    <span class="orange accent-1">
-		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
-		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p></div></span>
-   			<form action="">
-			<label for="Nombre" required> Nombre:</label>
-			<input id="Nombre" type="text">
-			<label for="Apellido"> Apellido:</label>
-			<input id= "Apellido" type="text">
-			<label for="Email"> Correo Electrónico:</label> 
-			<input id="Email" type="email">
-			<label for="Dirección">Dirección: </label>
-			<input id="Direccion" type="text">
-			<label for="Teléfono">Teléfono:</label>
-			<input id="Telefono" type="text">
-			<label for="">Selecciona un pack:</label>
-			<select name="" id="">
-				<option value="">Escoje tu opción</option>
-				<option value="">Pack de té clásico (Té negro)</option>
-				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta)</option>
-				<option value="">Pack variedades (Té verde, rojo y blanco)</option>
+	<header>
+		<h1>Tetería Té como Señora</h1>
+	</header>
+	<section id="formulario">
+		<p>Bienvenid@s a la Tetería "Té como Señora" <br> Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
+		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario:</p><br>
+		<form action="">
+			<label for="Nombre Dueño"> Nombre:</label><br>
+			<input title= "Ingrese su nombre" type="text" id ="nombre" required/><br>
+			<label for="Apellido"> Apellido:</label><br>
+			<input title="Ingrese su apellido" type="text" id ="apellido" required/><br>
+			<label for="Email">Correo Electrónico:</label><br>
+			<input title="Ingrese su e-mail" type="email" id="email" required/><br>
+			<label for="Dirección">Dirección: </label><br>
+			<input title="Ingrese la dirección" type="text" id="direccion" required/><br>
+			<label for="Teléfono">Teléfono:</label><br>
+			<input title="Ingrese número de teléfono" type="number" id="telefono" required/><br>
+			<label for="">Selecciona un pack:</label><br>
+			<select name="" id="teescogido" required></>
+				<option value="">Escoje tu opción:</option>
+				<option value="Pack de té clásico (Té negro)">Pack de té clásico (Té negro)</option>
+				<option value="Pack frutales (Hiebas y té con aromatizado con frutas">Pack frutales (Hierbas y té con aromatizado con fruta</option>
+				<option value="Pack variedades (Té verde, rojo y blanco">Pack variedades (Té verde, rojo y blanco)</option>
 			</select>
-			<label for=""></label>
-			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
+			<label for=""></label><br>
+			<input id="box" title="checkbox" type="checkbox" name="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos<br>
 			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
 		</form>
 	</section>
 	<section id="clientes">
-		
+		<h3>Cliente y sus compras:</h3>
 	</section>
 	<section id="productos">
-		<!-- Acá puedes crear lo que quieras-->
-	</section>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
-    <script src="js/main.js"></script>
+	</section>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -1,1 +1,25 @@
-/* Escribe acá tus estilos*/
+body {
+	font-family: 'Dancing Script', cursive;
+ 	font-size: 40px;
+  	display: inline-block;
+  	text-align: center;
+   	color: black;
+   	/*borde de color*/
+   	 text-shadow:
+   -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+   -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+
+   /*imagen de portada*/
+  	background-image: url("../img/te1.jpg");
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto; 
+	padding: 100px;
+}
+h1{
+color: #FFEB06;
+font-size: 70px;
+font-family: 'Dancing Script', cursive; 
+}
